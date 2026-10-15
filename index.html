@@ -368,7 +368,7 @@ function createClubJoinMessage(event){
   const field=document.getElementById('clubFullName');
   const name=field?field.value.trim():'';
   if(!name){if(field)field.focus();return;}
-  document.getElementById('clubJoinMessage').textContent=`Chào bạn Bùi Hải Yến nhé!\n\nMình tên là ${name}. Mình muốn xin tham gia Câu lạc bộ học tối. Mình đã gửi lời mời kết bạn Zalo. Mình có thể đăng ký tham gia ngay, không cần chờ bạn đồng ý kết bạn. Bạn hướng dẫn mình các bước tiếp theo với nhé. Cảm ơn bạn! 🌙📚`;
+  document.getElementById('clubJoinMessage').textContent=`Chào bạn Bùi Hải Yến nhé!\n\nMình tên là ${name}. Mình muốn xin tham gia Câu lạc bộ học tối. Mình đã gửi lời mời kết bạn Zalo. Bạn hướng dẫn mình các bước tiếp theo với nhé. Cảm ơn bạn! 🌙📚`;
   document.getElementById('clubJoinResult').classList.remove('hidden');
   const zaloBtn=document.getElementById('clubJoinZaloBtn');
   if(zaloBtn){zaloBtn.setAttribute('aria-disabled','true');zaloBtn.style.opacity='.55';zaloBtn.style.pointerEvents='none';}
